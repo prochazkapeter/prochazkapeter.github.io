@@ -5,36 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petr Procházka</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Montserrat';
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #A52422;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-img {
-            max-width: 140px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -50,18 +22,30 @@
     <div class="container">
         <img class="profile-img" src="profile-image.jpg" alt="Petr Procházka">
         <h2>O mně</h2>
-        <p>Dobrý den! Tento prezentační web byl vyroben s pomocí ChatGPT. Aktuálně jsem studentem FEL ČVUT v Praze.
+        <p class="greeting">Dobrý den!</p>
+        <p class="about-text">Tento prezentační web byl vyroben s pomocí ChatGPT. Aktuálně jsem studentem FEL ČVUT v
+            Praze.
             Studuji inženýrský obor Otevřená Informatika, specializace Počítačové inženýrství. Na FELu jsem se v rámci
             bakalářského studia
             zabýval specializací IoT rovněž v rámci oboru Otevřená Informatika. Dále pracuji v CESNETu a příležitostně
             pomůžu s čipovým měřením
-            závodů ve 4Timing. </p>
+            závodů ve 4Timing.</p>
 
-        <h2>Kontakt</h2>
-        <p>Pokud se chcete spojit, napište mi na:
-            <b>ahoj</b>(zavináč)<b>prochazkapetr</b>(tečka)<b>com</b></a>
-        </p>
     </div>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/petr-proch%C3%A1zka-ab239818b/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ahoj@prochazkapetr.com" target="_blank" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/prochazkapeter" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Petr Procházka</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 

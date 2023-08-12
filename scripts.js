@@ -12,7 +12,7 @@ anime.timeline()
 })
 .add({
     targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 30],
     easing: "easeOutExpo",
     duration: 700,
     delay: 100
@@ -26,13 +26,13 @@ anime.timeline()
 }).add({
     targets: '.ml11',
     opacity: 1,
-    duration: 1000,
+    duration: 100,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 100
   }).add({
     targets: '.ml11 .line',
     opacity: [0.5,0],
-    translateX: document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10,
+    translateX: document.querySelector('.ml11 .letters').getBoundingClientRect().width + 30,
     easing: "easeOutExpo",
     duration: 700
 });
