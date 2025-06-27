@@ -60,17 +60,20 @@ header {
 .profile-img {
     max-width: 140px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .ml11 {
     font-weight: 800;
     font-size: 3em;
+    text-align: center;
 }
 
 .ml11 .text-wrapper {
     position: relative;
     display: inline-block;
-    margin: 10px
+    margin: 10px;
 }
 
 .ml11 .line {
@@ -83,4 +86,32 @@ header {
 .ml11 .letters {
     font-size: calc(2vw + 0.5em);
     white-space: nowrap;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+        font-size: 16px;
+    }
+
+    .ml11 {
+        font-size: 2em;
+    }
+
+    .ml11 .letters {
+        font-size: 1.5em;
+        white-space: normal;
+        display: block;
+    }
+
+    .profile-img {
+        max-width: 100px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        margin: 0 6px;
+    }
 }
